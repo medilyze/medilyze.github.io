@@ -4,13 +4,16 @@
             width: 100%;
         }
     }
-    .container .people {
+    @media (min-width: 769px) {
+        .person {
+            width: calc(33.333%-6px);
+        }
+    }    .container .people {
         display: flex;
         flex-wrap: wrap;
     }
     .person {
         border: #000 solid 1px;
-        width: 200px;
     }
 </style>
 
