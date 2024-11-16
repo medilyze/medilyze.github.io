@@ -22,3 +22,23 @@ function includeHTML() {
 };
 
 includeHTML();
+
+const files = ['home.md'];
+
+files.forEach(file => {
+    const filename = file.replace('.md', '');
+    fetch(file)
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(response.status);
+        }
+        return response.text();
+    })
+    .then(mdContent => {
+        const htmlContent = marked(mdContent);
+        document.querySelector('#'+filename).innerHTML += htmlContent;
+    })
+    .catch(error => {
+        console.error(error);
+    });
+});
