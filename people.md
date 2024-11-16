@@ -7,12 +7,10 @@
     .container .people {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
     }
     .person {
         border: #000 solid 1px;
-        padding: 15px;
-        text-align: center;
+        width: 200px;
     }
 </style>
 
