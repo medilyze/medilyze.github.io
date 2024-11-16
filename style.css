@@ -56,8 +56,8 @@ nav a {
     .person {
         flex: 1 1 calc(33.333% - 16px);
     }
-    .person:nth-child(3n+1),
-    .person:nth-child(3n+2) {
+    .person:nth-child(3n+2),
+    .person:nth-child(3n+3) {
         margin-right: 16px;
     }
 }
