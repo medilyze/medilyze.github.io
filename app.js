@@ -23,7 +23,7 @@ function includeHTML() {
 
 includeHTML();
 
-const files = ['home.md'];
+const files = ['home.md', 'people.md'];
 
 files.forEach(file => {
     const filename = file.replace('.md', '');
