@@ -6,7 +6,7 @@
     }
     @media (min-width: 769px) {
         .person {
-            flex: 1 1 calc(33.333% - 6px);
+            flex: 1 1 calc(33.333% - 46px);
         }
     }    .container .people {
         display: flex;
@@ -14,6 +14,7 @@
     }
     .person {
         border: #000 solid 1px;
+        margin-right: 20px;
     }
 </style>
 
